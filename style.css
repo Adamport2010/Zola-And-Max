@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.dog-profile {
+    display: inline-block;
+    margin: 20px;
+}
+
+.dog-image {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.fun-icons img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+
+footer {
+    background-color: #ffcc00;
+    padding: 10px;
+    text-align: center;
+}
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section Background Colors */
+#home {
+    background-color: #ffebcd; /* Light beige for home */
+    color: #333;
+    padding: 50px 0;
+}
+
+#profile {
+    background-color: #f0fff0; /* Light green for profiles */
+    color: #333;
+    padding: 50px 0;
+}
+
+#fun-section {
+    background-color: #ffe4e1; /* Light pink for fun section */
+    color: #333;
+    padding: 50px 0;
+}
+
+/* Fun Section Icon Styling */
+.fun-icons img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffcc00; /* Keep header yellow */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ffcc00;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+/* Dog Profile Styling */
+.dog-profile {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.dog-profile img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Puzzle Game Styles */
+#puzzle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.puzzle-piece {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid #ffcc00; /* Border for visual clarity */
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+/* Puzzle Game Styles */
+#puzzle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.puzzle-piece {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid #ffcc00; /* Border for visual clarity */
+    border-radius: 5px; /* Slightly rounded corners */
+}
+<!-- Puzzle Game Section -->
+<section id="puzzle-section">
+    <h2>Order Pizza Puzzle Game!</h2>
+    <a id="start-puzzle-button" href="#">
+        <img src="images/button.png" alt="Start Puzzle" id="puzzle-button" />
+    </a>
+    <div id="puzzle-container"></div>
+</section>
