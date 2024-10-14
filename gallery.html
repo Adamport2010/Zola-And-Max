@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery of Zola and Max</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Function to display a pop-up when clicking the dogs
+        function showPopup(dogName) {
+            alert(`${dogName} is playing with you! Woof woof!`);
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Gallery of Zola and Max</h1>
+    <p>Click on the images to see Zola and Max playing!</p>
+
+    <div class="gallery">
+        <img src="zola.png" alt="Zola" onclick="showPopup('Zola')" class="interactive-image">
+        <img src="max.png" alt="Max" onclick="showPopup('Max')" class="interactive-image">
+    </div>
+
+    <a href="index.html">Back to Home</a>
+    <style>
+        body {
+            background-color: #E6E6FA; /* Light lavender background */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .house-info {
+            background-color: #F5F5F5;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+</body>
+</html>

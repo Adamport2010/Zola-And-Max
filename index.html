@@ -63,8 +63,6 @@
 </html>
 
 
-    <!-- Button for the Dog App -->
-    <button class="dog-button" onclick="alert('Zola and Max say Woof!')"></button>
 
 </body>
 </html>
@@ -73,110 +71,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zola and Max Dog App</title>
-    <style>
-        /* Button styling */
-        .dog-button {
-            background-color: #A0522D; /* Dog-like brown color */
-            border: 2px solid #8B4513; /* Dark brown border */
-            color: white;
-            width: 300px;
-            height: 80px;
-            font-size: 20px;
-            font-family: 'Arial', sans-serif;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .dog-button:hover {
-            background-color: #8B4513; /* Darker brown on hover */
-        }
-
-        .dog-button:active {
-            background-color: #5F370E; /* Darker when clicked */
-        }
-    </style>
+    <title>Zola & Max - Welcome</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Audio of dogs saying "Woof Woof" -->
-    <audio id="dogAudio">
-        <source src="woof.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+    <header>
+        <h1>Welcome to Zola & Max's World!</h1>
+    </header>
 
-    <!-- Button for the Dog App -->
-    <button class="dog-button" onclick="playAudioAndGoToPage()">Meet Zola and Max</button>
+    <nav>
+        <ul>
+            <li><a href="dogpage.html"><button>Meet Zola & Max</button></a></li>
+   
+            <li><a href="house.html"><button>House Info</button></a></li>
+            <li><a href="about.html"><button>About This App</button></a></li>
+            <li><a href="about.html">About Zola and Max</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="care.html">Dog Care Tips</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="training.html">Dog Training</a></li>
+            <li><a href="walks.html">Map of Walks</a></li>
+            <li><a href="family.html">Meet the Family</a></li>
+        </ul>
+    </nav>
 
-    <script>
-        // Function to play audio and navigate to another page
-        function playAudioAndGoToPage() {
-            const audio = document.getElementById('dogAudio');
-            audio.play(); // Play the woof sound
+    <main>
+        <section>
+            <h2>Meet Our Stars</h2>
+            <p>Welcome to the official app of Zola and Max, two amazing dogs with a lot of stories to share!</p>
+        </section>
+    </main>
 
-            // After the audio plays, navigate to a new page
-            audio.onended = function() {
-                window.location.href = 'dogPage.html'; // Replace with your actual dog page
-            };
-        }
-    </script>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zola and Max</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #F9D8A8; /* Light brown, dog-like color */
-            text-align: center;
-            padding: 50px;
-        }
-
-        h1 {
-            color: #333;
-            font-size: 36px;
-        }
-
-        .dog-button {
-            padding: 15px 30px;
-            background-color: #A0522D; /* Brown button for dog theme */
-            color: white;
-            font-size: 20px;
-            border: none;
-            cursor: pointer;
-            border-radius: 8px;
-        }
-
-        .dog-button:hover {
-            background-color: #8B4513; /* Darker brown on hover */
-        }
-    </style>
-</head>
-<body>
-
-    <h1>Welcome to Zola and Max's Page</h1>
-    
-    <p>Click the button below to see Zola and Max!</p>
-    
-    <!-- Button to go to dogpage.html -->
-    <button class="dog-button" onclick="goToDogs()">Meet Zola and Max</button>
-    
-    <!-- Audio file for "woof woof" -->
-    <audio id="woofAudio" src="woof-woof.mp3" preload="auto"></audio>
-
-    <script>
-        function goToDogs() {
-            // Play woof audio
-            document.getElementById('woofAudio').play();
-            // Redirect to dogpage.html
-            setTimeout(function() {
-                window.location.href = 'dogpage.html';
-            }, 1500); // Delay to allow the woof sound to play before redirect
-        }
-    </script>
+    <footer>
+        <p>© 2024 Zola & Max. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
